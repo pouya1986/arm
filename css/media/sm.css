@@ -1,0 +1,118 @@
+
+div.menu{
+    width: 100%;
+    height: 40px;
+    background-color: #2b2b2b;
+}
+div.menu>nav{
+width: inherit;
+height: inherit;
+}
+div.menu>nav>ul{
+width: inherit;
+height: inherit;
+text-align: center;
+}
+div.menu>nav>ul>li{
+width: auto;
+height: inherit;
+display: inline-block;
+}
+div.menu>nav>ul>li>a{
+display: block;
+text-decoration: none;
+color: rgb(6, 198, 51);
+width: inherit;
+height: inherit;
+padding: 0 10px;
+line-height: 40px;
+text-transform: capitalize;
+font-weight: bold;
+transition: 300ms;
+
+}
+div.menu>nav>ul>li>a:hover{
+background-color: #5b5b5b;
+}
+#close,#show,label[for=show],label[for=close]{
+    display: none;
+}
+div.parallax{
+    background: url('../../image/desktop-wallpaper-mechanism-robot-hand-goodfon-cyborg-arm.jpg') center center no-repeat fixed;
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-size: cover;
+    position: relative;
+}
+div.parallax>div.slogan{
+    width: 40%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 5px 5px 25px blueviolet; 
+    transition: 300ms;
+}
+div.parallax>div.slogan>h1{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+div.parallax>div.slogan>p{
+    color: aliceblue;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+div.parallax>div.slogan:hover{
+    backdrop-filter: blur(5px);
+}
+div.posts {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #2b2b2b;
+    text-align: center;
+  }
+  div.posts > div.post {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  div.posts > div.post > img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 25px rgb(172, 10, 201));
+  }
+  div.posts > div.post > h1{
+      margin: 10px;
+      color: aqua;
+      font-size: 22px;
+  }
+  div.posts > div.post >p{
+      margin: 10px;
+      color: aqua;
+      font-size: 14px;
+      text-align: justify;
+      line-height: 20px;
+  
+  }
+  div.posts > div.post > a{
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: green;
+  color: whitesmoke;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto;
+  text-transform: capitalize;
+  box-shadow: 5px 5px 25px blueviolet;
+  }

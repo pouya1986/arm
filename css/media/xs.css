@@ -1,0 +1,171 @@
+div.menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: -100%;
+  background-color: #2b2b2b;
+  transition: 300ms;
+  top: 0;
+  
+z-index: 9999;
+}
+div.menu > nav {
+  width: inherit;
+}
+div.menu > nav > ul {
+  width: inherit;
+
+  text-align: center;
+}
+div.menu > nav > ul > li {
+  width: auto;
+}
+div.menu > nav > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: rgb(4, 205, 241);
+  width: inherit;
+
+  padding: 0 10px;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: 300ms;
+}
+div.menu > nav > ul > li > a:hover {
+  background-color: #5b5b5b;
+}
+#show,
+#close {
+  display: none;
+}
+label[for="show"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-color: yellow;
+  position: relative;
+  cursor: pointer;
+}
+label[for="show"] > div {
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+}
+label[for="show"] > div:nth-of-type(1) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+label[for="show"] > div:nth-of-type(2) {
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+label[for="show"] > div:nth-of-type(3) {
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+
+#show:checked ~ div.menu {
+  left: 0;
+}
+label[for="close"] {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: yellow;
+  color: black;
+  position: absolute;
+  line-height: 30px;
+  text-align: center;
+  font-size: 30px;
+  right: 0;
+  top: 0;
+}
+#close:checked ~ div.menu{
+  left: -100%}
+  div.parallax{
+    background: url('../../image/desktop-wallpaper-mechanism-robot-hand-goodfon-cyborg-arm.jpg') center center no-repeat fixed;
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-size: cover;
+    position: relative;
+}
+div.parallax>div.slogan{
+    width: 40%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 5px 5px 25px blueviolet; 
+    transition: 300ms;
+}
+div.parallax>div.slogan>h1{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+div.parallax>div.slogan>p{
+    color: aliceblue;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+div.parallax>div.slogan:hover{
+    backdrop-filter: blur(5px);
+}
+div.posts {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #2b2b2b;
+    text-align: center;
+  }
+  div.posts > div.post {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  div.posts > div.post > img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 25px rgb(172, 10, 201));
+  }
+  div.posts > div.post > h1{
+      margin: 10px;
+      color: aqua;
+      font-size: 22px;
+  }
+  div.posts > div.post >p{
+      margin: 10px;
+      color: aqua;
+      font-size: 14px;
+      text-align: justify;
+      line-height: 20px;
+  
+  }
+  div.posts > div.post > a{
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: green;
+  color: whitesmoke;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto;
+  text-transform: capitalize;
+  box-shadow: 5px 5px 25px blueviolet;
+  }
+
+  
